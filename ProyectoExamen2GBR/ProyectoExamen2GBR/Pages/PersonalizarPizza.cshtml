@@ -65,13 +65,13 @@
                             <h4>Seleccione el tamaño de la pizza:</h4>
                             <div class="form-group">
                                 <label class="d-block">
-                                    <input type="radio" class="mr-1" name="Tamano"> Pequeño
+                                    <input type="radio" class="mr-1" name="Tamano" value="pequena" checked> Pequeña(6 slices)
                                 </label><br />
                                 <label class="d-block">
-                                    <input type="radio" class="mr-1" name="Tamano"> Mediano
+                                    <input type="radio" class="mr-1" name="Tamano" value="mediana"> Mediana(8 slices)
                                 </label><br />
                                 <label class="d-block">
-                                    <input type="radio" class="mr-1" name="Tamano"> Grande
+                                    <input type="radio" class="mr-1" name="Tamano" value="grande"> Grande(10 slices)
                                 </label><br />
                             </div>
                         </div>
@@ -88,11 +88,11 @@
                             <h4>que desee:</h4>
                             <div class="checkbox">
                                 <label for="">
-                                    <input type="checkbox" name="Ing1" />
+                                    <input type="checkbox" name="Ing1" value="salsa de tomate"/>
                                     Salsa de tomate
                                 </label>
                             </div>
-                            <div class="checkbox"><label><input type="checkbox" name="Ing1" />Queso</label></div>
+                            <div class="checkbox"><label><input type="checkbox" name="Ing1" value="queso mozzarella"/>Queso Mozzarella</label></div>
                         </div>
                         <div class="col-md-6"></div>
                     </div>
@@ -106,21 +106,27 @@
                             <h4>que desee:</h4>
                             <div class="checkbox">
                                 <label for="">
-                                    <input type="checkbox" name="Ing2" />
+                                    <input type="checkbox" name="Ing2" value="salsa blanca" />
                                     Salsa blanca
                                 </label>
                             </div>
 
-                            <div class="checkbox"><label for=""><input type="checkbox" name="Ing2" />Peperoni</label></div>
-                            <div class="checkbox"><label for=""><input type="checkbox" name="Ing2" />Cebolla</label></div>
-                            <div class="checkbox"><label for=""><input type="checkbox" name="Ing2" />Carne</label></div>
+                            <div class="checkbox"><label for=""><input type="checkbox" name="Ing2" value="jamon" />Jamón</label></div>
+                            <div class="checkbox"><label for=""><input type="checkbox" name="Ing2" value="pepperoni" />Pepperoni</label></div>
+                            <div class="checkbox"><label for=""><input type="checkbox" name="Ing2" value="cebolla" />Cebolla</label></div>
+                            <div class="checkbox"><label for=""><input type="checkbox" name="Ing2" value="carne" />Carne</label></div>
+                            <div class="checkbox"><label for=""><input type="checkbox" name="Ing2" value="aceitunas" />Aceitunas</label></div>
+                            <div class="checkbox"><label for=""><input type="checkbox" name="Ing2" value="hongos" />Hongos</label></div>
+                            <div class="checkbox"><label for=""><input type="checkbox" name="Ing2" value="tocino" />Tocino</label></div>
+                            <div class="checkbox"><label for=""><input type="checkbox" name="Ing2" value="queso parmesano" />Queso Parmesano</label></div>
+                            <div class="checkbox"><label for=""><input type="checkbox" name="Ing2" value="queso cheddar" />Queso Cheddar</label></div>
                         </div>
                         <div class="col-md-6"></div>
                     </div>
                 </div>
             </div>
         </div>
-        <button type="submit" class="btn btn-success" href="/">Consultar precio</button>
+        <button type="submit" class="btn btn-success">Consultar precio</button>
     </form>
 </body>
 </html>

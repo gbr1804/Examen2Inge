@@ -9,16 +9,17 @@ namespace ProyectoExamen2GBR.Models
     {
         public double calculaPrecio(string tamano, int cantidadIngTradicionales, int cantidadIngSecundarios)
         {
-            double porcentajeIva = 13; //Hay que usarlo
-            double precioIngTradicional = 500;
-            double precioIngSecundario = 600;
+            double porcentajeIva = 13;
+            double precioExpress = 500;
+            double precioIngTradicional = 200;
+            double precioIngSecundario = 400;
             double precioTamano = 0;
             switch (tamano)
             {
-                case "pequeno":
+                case "pequena":
                     precioTamano = 2000;
                     break;
-                case "mediano":
+                case "mediana":
                     precioTamano = 4000;
                     break;
                 case "grande":
@@ -26,10 +27,10 @@ namespace ProyectoExamen2GBR.Models
                     break;
                 default:
                     break;
-
             }
             double precioSinImpuesto = precioTamano + cantidadIngTradicionales * precioIngTradicional + cantidadIngSecundarios * precioIngSecundario;
-            double precioConImpuesto = precioSinImpuesto * 1.13;
+            double precioConImpuesto = (precioSinImpuesto/100) * (100+porcentajeIva);
+            precioConImpuesto = precioConImpuesto + precioExpress;
             return precioConImpuesto;
         }
     }
