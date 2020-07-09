@@ -23,7 +23,7 @@ namespace ProyectoExamen2GBR.Pages
             string[] ingTradicionales = Request.Form["Ing1"];
             string[] ingSecundarios = Request.Form["Ing2"];
             int numIngTradicionales = ingTradicionales.Length;
-            int numIngSecundarios = ingTradicionales.Length;
+            int numIngSecundarios = ingSecundarios.Length;
             double precio = ordenControl.calculaPrecio(tamano, numIngTradicionales, numIngSecundarios);
             return RedirectToPage("Precio", new { precio, tamano, ingTradicionales, ingSecundarios });
         }

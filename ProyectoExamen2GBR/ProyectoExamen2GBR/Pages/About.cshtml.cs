@@ -12,7 +12,7 @@ namespace ProyectoExamen2GBR.Pages
 
         public void OnGet()
         {
-            Message = "Your application description page.";
+            Message = "Pizzería GBR es más que una pizzería. No solo nos preocupamos por brindar la mejor pizza, sino también por brindar el mejor producto.";
         }
     }
 }

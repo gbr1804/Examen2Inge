@@ -23,23 +23,38 @@ namespace ProyectoExamen2GBR.Pages
             else
             {
                 TituloPrecio = "Precio a pagar, ya incluyendo el servicio Express y los impuestos";
-                MensajePrecio = "El precio que se debe pagar por la pizza " + tamano + ", que contiene los ingredientes tradicionales: ";
-                for (int i=0; i<ingTradicionales.Length; i++)
+                MensajePrecio = "El precio que se debe pagar por la pizza " + tamano;
+                if (ingTradicionales.Length > 0)
                 {
-                    MensajePrecio += ingTradicionales[i];
-                    if(i < ingTradicionales.Length - 1)
+                    MensajePrecio += ", que contiene los ingredientes tradicionales: ";
+                    for (int i=0; i<ingTradicionales.Length; i++)
                     {
-                        MensajePrecio += ", ";
+                        MensajePrecio += ingTradicionales[i];
+                        if(i < ingTradicionales.Length - 1)
+                        {
+                            MensajePrecio += ", ";
+                        }
                     }
                 }
-                MensajePrecio += " y los ingredientes secundarios: ";
-                for (int i = 0; i < ingSecundarios.Length; i++)
+                else
                 {
-                    MensajePrecio += ingSecundarios[i];
-                    if (i < ingSecundarios.Length - 1)
+                    MensajePrecio += ", que no contiene ingredientes tradicionales";
+                }
+                if (ingSecundarios.Length > 0)
+                {
+                    MensajePrecio += " y los ingredientes secundarios: ";
+                    for (int i = 0; i < ingSecundarios.Length; i++)
                     {
-                        MensajePrecio += ", ";
+                        MensajePrecio += ingSecundarios[i];
+                        if (i < ingSecundarios.Length - 1)
+                        {
+                            MensajePrecio += ", ";
+                        }
                     }
+                }
+                else
+                {
+                    MensajePrecio += " y que no contiene ingredientes secundarios";
                 }
                 MensajePrecio += ", es de ₡" + precio;
             }   
