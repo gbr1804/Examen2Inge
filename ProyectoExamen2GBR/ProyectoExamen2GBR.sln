@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.28307.1062
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProyectoExamen2GBR", "ProyectoExamen2GBR\ProyectoExamen2GBR.csproj", "{62E86FFD-FE4E-4D91-BDB4-A51770DFEC39}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ProyectoExamen2GBR", "ProyectoExamen2GBR\ProyectoExamen2GBR.csproj", "{62E86FFD-FE4E-4D91-BDB4-A51770DFEC39}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnitTestProyectoExamen2GBR", "UnitTestProyectoExamen2GBR\UnitTestProyectoExamen2GBR.csproj", "{24E315BD-7D60-4166-8799-A70D75B0D349}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{62E86FFD-FE4E-4D91-BDB4-A51770DFEC39}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{62E86FFD-FE4E-4D91-BDB4-A51770DFEC39}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{62E86FFD-FE4E-4D91-BDB4-A51770DFEC39}.Release|Any CPU.Build.0 = Release|Any CPU
+		{24E315BD-7D60-4166-8799-A70D75B0D349}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{24E315BD-7D60-4166-8799-A70D75B0D349}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{24E315BD-7D60-4166-8799-A70D75B0D349}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{24E315BD-7D60-4166-8799-A70D75B0D349}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
